@@ -8,7 +8,7 @@ def fn_hack_9(result):
     final = {}
     for key, value in result.items():
         if key.lower() == 'foo':
-            final['Foo'] = value.replace('k', '')
+            final['Foo'] = value.replace('k', '').capitalize()
     return final
 
 

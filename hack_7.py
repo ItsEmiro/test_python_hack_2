@@ -13,7 +13,10 @@ result = ["a","b","c","d","e"]
 def fn_hack_7(result):
     if len(result) != 0:
         for i in range(len(result)):
-            result[i] = str(i + 1)  
+            if i % 2 != 0: 
+                result[i] = i + 1
+            else:
+                result[i] = str(i + 1)  
 
     if not result:
         result = ['0']
